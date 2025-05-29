@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script>
+		function aaa(){
+			let a = document.getElementById("pw1");
+			let b = document.getElementById("pw2");
+			if (a.value != b.value){
+				alert("비밀번호와 확인의 값이 일치하지 않습니다.");
+				a.value = "";
+				b.value = "";
+			}
+			let name = document.getElementById("name");
+			if (name.value == "")
+				alert("이름을 입력하지 않았습니다.");
+		}
+		function bbb(){
+			let a = document.getElementById("id");
+			let b = document.getElementById("msg");
+			if (a.value.length < 5){
+				b.style.color = "red";
+				b.innerHTML = "글자수가 부족합니다.";
+			} 
+			else {
+				b.style.color = "black";
+				b.innerHTML = "아이디 글자수 확인";
+			}
+		}
+
+		function ccc(e){
+			if (e.keyCode < 48 || e.keyCode > 57){
+				alert("숫자만을 입력해야 합니다.");
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+		아이디 <input type="text" id="id"><span onclick="bbb()" id="msg"> 아이디 글자수 확인</span><br>
+		이름 <input type="text" id="name" onkeydown="ccc(event)"> <br>
+		비밀번호 <input type="password" id="pw1"> <br>
+		비밀번호확인 <input type="password" id="pw2"> <br>
+ 		<input type="button"  value="확인"  onclick="aaa()">
+ 	</form>
+ 
+</body>
+</html>

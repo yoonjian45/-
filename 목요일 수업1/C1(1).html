@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>나의 실습</title>
+	<style type="text/css">
+		span{
+			font-size: 16px;
+			color: #ff0000;
+		}
+
+		.id{
+			background-color: yellow;
+		}
+		div{
+			text-align: center;
+		}
+		.f1{
+			background-color: #f02040;
+		}
+	</style>
+</head>
+<body>
+	<form method="post" >
+		<fieldset class="f1">
+			<legend >기본정보</legend>
+			사용자 ID : <input type="text" class="id"required placeholder="5자 이상" name="ID"><br>
+			비밀번호 : <input type="password" name="pw"><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>추가정보</legend>
+			<span>나이<span> : 
+			<input type="radio" name="age"> 10대
+			<input type="radio" name="age"> 20대
+			<input type="radio" name="age"> 30대
+			<input type="radio" name="age"> 40대<br>
+
+			추가 경로 : 
+			<select name="s">
+				<option value="1">친구</option>
+				<option value="1">인터넷</option>
+				<option value="1">부모님</option>
+			</select><br>
+
+			<textarea  rows=3 cols='50' placeholder="남기고 싶은 말을 작성하시오 : 여러 줄 가능"></textarea><br>
+		</fieldset>
+		<div>
+			<input type="checkbox" name=""> 동의 
+			<input type="submit" value="확인" name="">
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+		p{
+			width: 150px;
+			height: 100px;
+			padding: 10px;
+			border: 2px solid black;
+			margin: 10px;
+			display: inline;
+			text-shadow: 5px 5px grey;
+			box-shadow: 5px 5px grey;
+		}
+		.p1{
+			font-size: 12px;
+		}
+		.p2{
+			font-size: 10px;
+		}
+		.p3{
+			font-size: 2em;
+		}
+		a{
+			color: black;
+		}

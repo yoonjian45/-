@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		let today=new Date();
+ 		let msg=today.toLocaleString();
+ 		document.write("현재 시간은 "+msg);
+
+ 		if (today.getHours() < 12)
+ 			document.bgColor = "red";
+ 		else
+ 			document.bgColor = "skyblue"
+	</script>
+</body>
+</html>

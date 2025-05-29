@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script>
+		function aaa() {
+			let a =  document.getElementById("h");
+			a.style.color = "red";
+			a.innerHTML = "순    서";
+		}
+
+		function bbb(a){
+			a.style.backgroundColor="yellow";
+		}
+
+		function ccc(a){
+			a.style.backgroundColor="white";
+		}
+
+		function ddd(){
+			let name = prompt("당신의 이름은?");
+			alert(name+"님 환영합니다");
+			let today = new Date();
+			let m = (today.getYear()+1900) + "년 "
+			m += m + (today.getMonth()+1) + "월 "
+			m += today.getDate() + "일";
+			let a = document.getElementById("footer");
+			a.innerHTML = name + "님이 방문한 날짜는 " +m
+
+		}
+	</script>
+</head>
+<body onload="ddd()">
+	<h1 id="h">목 차</h1>
+ 	<ul>
+ 		<li onmouseover="bbb(this)" onmouseout="ccc(this)">역사</li>
+ 		<li onmouseover="bbb(this)" onmouseout="ccc(this)">안드로이드폰</li>
+ 		<li onmouseover="bbb(this)" onmouseout="ccc(this)">아이폰</li>
+ 		<li onmouseover="bbb(this)" onmouseout="ccc(this)">샘플</li>
+ 	</ul>
+ 	<input type="button"  value="알아보기"  onclick="aaa()"> <br><br>
+ 	<div id="footer"></div>
+
+</body>
+</html>

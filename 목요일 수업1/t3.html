@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script>
+		function aaa(b){
+			let a = document.getElementById(b);
+			a.value = "";
+		}
+
+		function abc(){
+			let a = document.getElementById("hakbun");
+			a.focus();
+		}
+
+		function change(){
+			let a = document.getElementById("p");
+			let b = document.getElementById("c");
+			a.style.color = b.value;
+		}
+
+		function bbb(){
+			let a = document.getElementById("fruits")
+			let b = document.getElementById("fruitImage")
+			if (a.value == "1")
+				b.src = "st.png"
+			else if (a.value == "2")
+				b.src = "banana.png";
+			else
+				b.src = "aplle.png";
+		}
+	</script>
+</head>
+<body onload="abc()">
+	 <form>
+		학번 <input type="text"  id="hakbun" onfocus="aaa('hakbun')"><br>
+		이름 <input type="text" id="name" onfocus="aaa('name')"><br>
+ 		<input type="button"  value="보내기">
+ 	</form>
+ 	<p id="p"> 선택하세요</p>
+ 	<select id="c" onchange="change()">
+ 		<option value="red">빨간색</option>
+ 		<option value="blue">파란색</option>
+ 		<option value="yellow">노란색</option>
+ 		<option value="green">초록색</option>
+ 	</select>
+ 	
+ 	<br>
+ 	<br>
+ 	<br>
+
+ 	 <select id="fruits" onchange="bbb()">
+ 		<option value="1">딸기
+		<option value="2" >바나나
+		<option value="3"  selected>사과
+	</select>
+ 	<img id="fruitImage" src="apple.png">
+</body>
+</html>

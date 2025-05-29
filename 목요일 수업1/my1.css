@@ -1,0 +1,16 @@
+		a{
+			color: black;
+		}
+		a:hover{
+			text-decoration: none;
+
+		}
+		a:active{
+			color: green;
+		}
+		.d1:hover{
+			border: 2px dotted blue;
+		}
+		input:focus{
+			background-color: yellow;
+		}

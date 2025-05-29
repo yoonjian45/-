@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		div{
+			float: left;
+			width: 400px;
+		}
+	</style>
+	<script>
+		function aaa(){
+			let a = document.getElementById('a')
+			a.style.color = 'red';
+			a.style.backgroundColor='yellow'
+		}
+		function ddd(){
+			let b = document.getElementById('p')
+			a.style.color = 'red';
+			a.style.backgroundColor='yellow'
+			a.style.border='2px solid red'
+		}
+		function ccc(){
+			let a = document.getElementById(b)
+			a.style.backgroundColor=c
+		}
+	</script>
+</head>
+<body>
+	<h3 id="a">산길</h3>
+	<p>오늘 아침 일찍 산에 올랐다. 가지고 간 물을 마셨다. 한참 올라 가는 도중에</p>
+	<div id="d1" onclick="ccc('d1',)">산길을 간다. 말없이호올로 산길을 간다</div>
+	<div id="d2" onclick="ccc()">해는 져서 새소리 그치고짐승의 발자취 그윽히 들리는</div>
+	<span>산길</span>을 간다 말없이밤에 홀로 산길을 간다<br><br>
+	<input type="button" value="산길" onclick="aaa()"> 
+	<input type="button" value="문단" onclick="bbb()">
+
+</body>
+</html>

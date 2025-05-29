@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script>
+		function adder(){
+			 let a = Math.floor( Math.random() * 10);
+			 let b = Math.floor( Math.random() * 10);
+			 let user=prompt(a + '+' + b + '= ??');
+			 if (user == (a + b))
+			 	alert("참잘했어요!!!");
+			 else
+			 	alert("다시 한번만 해보세요");
+		}
+	</script>
+</head>
+<body>
+	<input type="button"  value="더하기 연습" onClick="adder()"> 
+
+	 <br><br>
+</body>
+</html>
